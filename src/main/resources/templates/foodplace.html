@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food</title>
+</head>
+<body>
+<h1>My favourite food</h1>
+<li th:each="food: ${foods}">
+    <h3>Food name: [[${food.foodName}]]</h3>
+    <h4>Food Store: [[${food.foodDescription}]]</h4>
+</li>
+</body>
+</html>
